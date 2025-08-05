@@ -3,7 +3,7 @@ export interface Student {
 }
 
 export const students: Student[] = [
-    { name: "Emil"},
-    { name: "Anastasiya"},
-    { name: "Pernilla"},
+  //  { name: "Emil"}, 
+   // { name: "Anastasiya"}, 
+   // { name: "Pernilla"},
 ];
