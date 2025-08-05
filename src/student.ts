@@ -1,8 +1,8 @@
-interface Student {
+export interface Student {
     name: string;
 }
 
-const students: Student[] = [
+export const students: Student[] = [
     { name: "Emil"},
     { name: "Anastasiya"},
     { name: "Pernilla"},
