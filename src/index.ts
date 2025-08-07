@@ -12,7 +12,9 @@ function ShowStudents(): void {
 students.forEach(student => { 
     let namn = document.createElement("p");
     namn.innerText = student.name;
+    namn.classList.add(student.isActive ? "active" : "inactive");
     content.appendChild(namn);
+
 });
 }
 
