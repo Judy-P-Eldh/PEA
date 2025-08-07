@@ -1,9 +1,10 @@
 export interface Student {
     name: string;
+    isActive: boolean;
 }
 
 export const students: Student[] = [
-   { name: "Emil"}, 
-   { name: "Anastasiya"}, 
-   { name: "Pernilla"},
+   { name: "Emil", isActive: true},
+   { name: "Anastasiya", isActive: false},
+   { name: "Pernilla", isActive: true},
 ];

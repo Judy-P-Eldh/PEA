@@ -1,6 +1,6 @@
 export var students = [
-    { name: "Emil" },
-    { name: "Anastasiya" },
-    { name: "Pernilla" },
+    { name: "Emil", isActive: true },
+    { name: "Anastasiya", isActive: false },
+    { name: "Pernilla", isActive: true },
 ];
 //# sourceMappingURL=student.js.map
