@@ -1,5 +1,6 @@
-import { students } from "./student.js";
+import { students, Student } from "./student.js";
 const content = document.querySelector("#content") as HTMLElement;
+const addButton = document.querySelector("#addStudent") as HTMLElement;
 
 function ShowStudents(): void {
   let info = document.createElement("p");
@@ -14,8 +15,15 @@ students.forEach(student => {
     studentInfo.innerText = `${student.name} (${student.age} år) - ${student.isActive ? "Aktiv" : "Inaktiv"}`;
     studentInfo.classList.add(student.isActive ? "active" : "inactive");
     content.appendChild(studentInfo);
-
 });
 }
 
+//lägg till en student i array när knappen är tryckt
+function addStudent(): void {
+    const newStudent: Student = {name: "Robert", isActive: true, age: 22};
+    students.push(newStudent);
+    console.log(students);    
+}
+
 ShowStudents();
+addButton?.addEventListener("submit", addStudent);
