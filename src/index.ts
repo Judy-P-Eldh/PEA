@@ -10,10 +10,10 @@ function ShowStudents(): void {
   }
 // Loopar igenom listan och skapat ett p-element vid varje loop & sedan infogar den innehållet från listan in i p-tagen
 students.forEach(student => { 
-    let namn = document.createElement("p");
-    namn.innerText = student.name;
-    namn.classList.add(student.isActive ? "active" : "inactive");
-    content.appendChild(namn);
+    let studentInfo = document.createElement("p");
+    studentInfo.innerText = `${student.name} (${student.age} år) - ${student.isActive ? "Aktiv" : "Inaktiv"}`;
+    studentInfo.classList.add(student.isActive ? "active" : "inactive");
+    content.appendChild(studentInfo);
 
 });
 }
