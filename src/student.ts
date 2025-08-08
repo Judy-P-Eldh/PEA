@@ -4,7 +4,7 @@ export interface Student {
     age: number;
 }
 
-export const students: Student[] = [
+export let students: Student[] = [
    { name: "Emil", isActive: true, age: 20 },
    { name: "Anastasiya", isActive: false, age: 25 },
    { name: "Pernilla", isActive: true, age: 30 },
